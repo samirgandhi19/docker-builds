@@ -10,7 +10,7 @@ services:
 
 before_install:
   - chmod +x ./ci_scripts/if_readme_only.sh
-  - ./ci_scripts/check_md.sh
+  - ./ci_scripts/if_readme_only.sh
 
 script:
   - docker image build -t pingidentity/pingdatacommon ./pingdatacommon
