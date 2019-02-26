@@ -9,7 +9,8 @@ services:
   - docker
 
 before_install:
-  - sudo ./ci_scripts/check_md
+  - chmod +x ./ci_scripts/check_md.sh
+  - ./ci_scripts/check_md.sh
 
 script:
   - docker image build -t pingidentity/pingdatacommon ./pingdatacommon
