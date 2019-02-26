@@ -29,3 +29,4 @@ If you would rather not have your issue discussed in public, you can email bug r
 ### Contributing Code Changes
 
 Ping Identity does not accept third-party code submissions.
+
