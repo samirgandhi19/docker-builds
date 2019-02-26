@@ -4,7 +4,13 @@ branches:
   only:
   - gh-pages
   - /.*/
-   
+
+notifications:
+  slack: 
+    rooms:
+      - pingidentity:FECD6DfLcWlWRsUR9xqeg1Ybs
+      - pingidentity:FECD6DfLcWlWRsUR9xqeg1Yb#dockerhub_builds
+  
 services:
   - docker
 
@@ -18,6 +24,3 @@ script:
   - docker image build -t samirgandhi/pingfederate ./pingfederate
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push samirgandhi/pingfederate
-
-notifications:
-  slack: pingidentity:FECD6DfLcWlWRsUR9xqeg1Ybs
