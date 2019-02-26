@@ -20,4 +20,4 @@ script:
   - docker push samirgandhi/pingfederate
 
 notifications:
-  slack: pingidentity:FECD6DfLcWlWRsUR9xqeg1Yb
+  slack: pingidentity:FECD6DfLcWlWRsUR9xqeg1Ybs
