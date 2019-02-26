@@ -21,3 +21,4 @@ script:
 
 notifications:
   slack: pingidentity:FECD6DfLcWlWRsUR9xqeg1Yb
+  
