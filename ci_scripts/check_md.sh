@@ -2,7 +2,7 @@
 
 set -e
 
-CHANGED_FILES=`git diff --name-only master...${TRAVIS_COMMIT}`
+CHANGED_FILES=`git diff --name-only master ${TRAVIS_COMMIT}`
 ONLY_READMES=True
 MD=".md"
 
@@ -19,5 +19,4 @@ if [[ $ONLY_READMES == True ]]; then
   exit 1
 else
   echo "Non-.md files found, continuing with build."
-  python verify_files.py
 fi
